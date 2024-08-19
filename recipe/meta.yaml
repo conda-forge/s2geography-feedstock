@@ -1,5 +1,5 @@
 {% set name = "s2geography" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/paleolimbot/s2geography/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 8055d7431b55c36f245813784f9ae2455f8969c36ee0d140a66ccce2124caef1
+  sha256: 877c6f9e3cfb78d0784bf08741e83620089f9351822b7672d4c13cd56712c8c1
 
 build:
   number: 0
@@ -15,6 +15,7 @@ build:
 requirements:
   build:
     - {{ compiler("cxx") }}
+    - {{ stdlib("c") }}
     - {{ stdlib("c") }}
     - cmake >=3.12,<4
     - make  # [linux]
