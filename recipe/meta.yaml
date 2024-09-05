@@ -25,9 +25,7 @@ requirements:
     - openssl
     - libabseil
     - s2geometry
-  run:
-    - libabseil
-    - s2geometry
+
 test:
   commands:
     - test -f ${PREFIX}/lib/libs2geography.dylib  # [osx]
