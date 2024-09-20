@@ -10,5 +10,7 @@ libabseil:
 - '20240116'
 openssl:
 - '3'
+s2geometry:
+- 0.11.1
 target_platform:
 - win-64
