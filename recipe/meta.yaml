@@ -20,7 +20,7 @@ requirements:
     - {{ compiler("cxx") }}
     - {{ stdlib("c") }}
     - cmake >=3.12,<4
-    - make  # [linux]
+    - make  # [unix]
   host:
     - openssl
     - libabseil
