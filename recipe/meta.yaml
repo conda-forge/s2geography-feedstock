@@ -8,6 +8,9 @@ package:
 source:
   url: https://github.com/paleolimbot/s2geography/archive/refs/tags/{{ version }}.tar.gz
   sha256: 96e07816bd83a5e4cf8bcf7cf001705ed94026c9ba7cc586d4aa2559a54cc02d
+  patches:
+    # TODO: remove the patch below for the next s2geography release
+    - 0001-cmake-exclude-nanoarrow-from-all-install-targets.patch
 
 build:
   number: 0

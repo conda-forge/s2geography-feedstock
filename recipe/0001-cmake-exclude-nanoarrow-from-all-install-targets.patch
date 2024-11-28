@@ -1,0 +1,26 @@
+From 8b81411cdae10fcf88205894521d3b76786cd7a8 Mon Sep 17 00:00:00 2001
+From: Benoit Bovy <benbovy@gmail.com>
+Date: Thu, 28 Nov 2024 11:08:40 +0100
+Subject: [PATCH] cmake: exclude nanoarrow from all install targets
+
+---
+ CMakeLists.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 2ec4acb..f2dcbc0 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -211,6 +211,9 @@ if(S2GEOGRAPHY_BUILD_TESTS)
+     URL_HASH
+       SHA256=cadbca542806a7554830cbca0393cda3470bdca6d0ce29b5e115b168c6c0b435)
+ 
++  # do not install nanoarrow by default when running cmake --install
++  set_property(DIRECTORY ${nanoarrow_SOURCE_DIR} PROPERTY EXCLUDE_FROM_ALL YES)
++
+   FetchContent_MakeAvailable(nanoarrow)
+ 
+   if(S2GEOGRAPHY_CODE_COVERAGE)
+-- 
+2.36.0
+
