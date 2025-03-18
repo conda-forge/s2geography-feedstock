@@ -13,7 +13,7 @@ source:
     - 0001-cmake-exclude-nanoarrow-from-all-install-targets.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # breaking changes are expected in minor 0.x releases
     - {{ pin_subpackage('s2geography', max_pin='x.x') }}
