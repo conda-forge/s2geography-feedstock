@@ -13,7 +13,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '18'
+- '19'
 libabseil:
 - '20250127'
 macos_machine:
@@ -23,6 +23,6 @@ openssl:
 s2geography:
 - 0.1.2
 s2geometry:
-- 0.11.1
+- '0.12'
 target_platform:
 - osx-64
