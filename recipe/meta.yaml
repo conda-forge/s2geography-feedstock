@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/paleolimbot/s2geography/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 96e07816bd83a5e4cf8bcf7cf001705ed94026c9ba7cc586d4aa2559a54cc02d
+  sha256: 4b42b960b12c936f1f5de3c93c49f805f2672b1b686779d59328f2fb79116816
 
 build:
   number: 1
