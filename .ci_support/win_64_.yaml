@@ -9,7 +9,7 @@ cxx_compiler:
 libabseil:
 - '20250127'
 openssl:
-- '3'
+- '3.5'
 s2geography:
 - 0.1.2
 s2geometry:
