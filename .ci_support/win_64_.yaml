@@ -5,11 +5,11 @@ channel_sources:
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2019
+- vs2022
 libabseil:
-- '20250127'
+- '20250512'
 openssl:
-- '3'
+- '3.5'
 s2geography:
 - 0.1.2
 s2geometry:
